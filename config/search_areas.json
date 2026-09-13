@@ -1,0 +1,12 @@
+{
+  "suburbs": [
+    "Darlington-NSW-2008", "Erskineville-NSW-2043", "Newtown-NSW-2042",
+    "Redfern-NSW-2016", "Chippendale-NSW-2008", "Camperdown-NSW-2050",
+    "Glebe-NSW-2037", "Annandale-NSW-2038", "Leichhardt-NSW-2040",
+    "Lewisham-NSW-2049", "Petersham-NSW-2049", "Stanmore-NSW-2048",
+    "Marrickville-NSW-2204", "Dulwich Hill-NSW-2203", "Summer Hill-NSW-2130",
+    "Tempe-NSW-2044", "Zetland-NSW-2017", "Waterloo-NSW-2017",
+    "Alexandria-NSW-2015", "Pyrmont-NSW-2009", "Ultimo-NSW-2007"
+  ],
+  "note": "Suburb-slug format matches Domain's locality naming. Add/remove freely."
+}

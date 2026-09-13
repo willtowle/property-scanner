@@ -1,0 +1,38 @@
+name: Daily property sweep
+
+on:
+  schedule:
+    # 21:00 UTC = 7am Sydney (AEDT, UTC+11) — adjust for AEST (+10) in winter
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sweep
+        env:
+          DOMAIN_CLIENT_ID: ${{ secrets.DOMAIN_CLIENT_ID }}
+          DOMAIN_CLIENT_SECRET: ${{ secrets.DOMAIN_CLIENT_SECRET }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: python src/sweep.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "property-scanner-bot"
+          git config user.email "actions@github.com"
+          git add dashboard/public/data/listings.json
+          git diff --cached --quiet || git commit -m "Sweep: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

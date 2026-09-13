@@ -1,0 +1,13 @@
+{
+  "expected_price_cap": 1650000,
+  "underquote_assumption": { "auction": 0.10, "private_treaty": 0.03 },
+  "beds_min": 2,
+  "beds_max": 3,
+  "property_types": ["apartment", "townhouse", "house"],
+  "parking_min": 0,
+  "parking_bonus": true,
+  "outdoor_space_bonus": true,
+  "scarcity_min": 70,
+  "transit_minutes_max": 20,
+  "transit_anchor": "Sydney CBD (Town Hall / Central)"
+}

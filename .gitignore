@@ -1,0 +1,18 @@
+# Node / dashboard
+node_modules/
+dashboard/dist/
+dashboard/node_modules/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Local backup of the original bundle
+sydney-property-scanner-app.zip

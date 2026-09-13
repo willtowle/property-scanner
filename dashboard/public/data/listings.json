@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-09-13T21:00:00Z",
+  "generated_at": "2026-09-13T23:01:33.080767Z",
   "brief": {
     "expected_price_cap": 1650000,
-    "underquote_assumption": { "auction": 0.10, "private_treaty": 0.03 },
+    "underquote_assumption": {
+      "auction": 0.1,
+      "private_treaty": 0.03
+    },
     "beds_min": 2,
     "beds_max": 3,
-    "property_types": ["apartment", "townhouse", "house"],
+    "property_types": [
+      "apartment",
+      "townhouse",
+      "house"
+    ],
     "parking_min": 0,
     "parking_bonus": true,
     "outdoor_space_bonus": true,
@@ -13,79 +20,6 @@
     "transit_minutes_max": 20,
     "transit_anchor": "Sydney CBD (Town Hall / Central)"
   },
-  "count": 6,
-  "listings": [
-    {
-      "id": "sample-2015489",
-      "address": "12 Albert Street, Erskineville NSW 2043",
-      "beds": 2,
-      "baths": 1,
-      "parking": 1,
-      "guide_price": 1150000,
-      "expected_clearing": 1184500,
-      "method": "private_treaty",
-      "scarcity": 90,
-      "url": "https://www.domain.com.au/12-albert-street-erskineville-nsw-2043-sample-2015489"
-    },
-    {
-      "id": "sample-2015502",
-      "address": "5/88 Station Street, Newtown NSW 2042",
-      "beds": 2,
-      "baths": 1,
-      "parking": 0,
-      "guide_price": 1050000,
-      "expected_clearing": 1155000,
-      "method": "auction",
-      "scarcity": 72,
-      "url": "https://www.domain.com.au/5-88-station-street-newtown-nsw-2042-sample-2015502"
-    },
-    {
-      "id": "sample-2015571",
-      "address": "34 Fitzroy Street, Marrickville NSW 2204",
-      "beds": 3,
-      "baths": 2,
-      "parking": 1,
-      "guide_price": 1400000,
-      "expected_clearing": 1442000,
-      "method": "private_treaty",
-      "scarcity": 90,
-      "url": "https://www.domain.com.au/34-fitzroy-street-marrickville-nsw-2204-sample-2015571"
-    },
-    {
-      "id": "sample-2015610",
-      "address": "7 Llewellyn Street, Lewisham NSW 2049",
-      "beds": 3,
-      "baths": 1,
-      "parking": 2,
-      "guide_price": 1450000,
-      "expected_clearing": 1595000,
-      "method": "auction",
-      "scarcity": 90,
-      "url": "https://www.domain.com.au/7-llewellyn-street-lewisham-nsw-2049-sample-2015610"
-    },
-    {
-      "id": "sample-2015688",
-      "address": "2/19 Victoria Road, Dulwich Hill NSW 2203",
-      "beds": 2,
-      "baths": 2,
-      "parking": 1,
-      "guide_price": 980000,
-      "expected_clearing": 1009400,
-      "method": "private_treaty",
-      "scarcity": 72,
-      "url": "https://www.domain.com.au/2-19-victoria-road-dulwich-hill-nsw-2203-sample-2015688"
-    },
-    {
-      "id": "sample-2015744",
-      "address": "41 Denison Road, Stanmore NSW 2048",
-      "beds": 3,
-      "baths": 1,
-      "parking": 0,
-      "guide_price": 1500000,
-      "expected_clearing": 1650000,
-      "method": "auction",
-      "scarcity": 90,
-      "url": "https://www.domain.com.au/41-denison-road-stanmore-nsw-2048-sample-2015744"
-    }
-  ]
+  "count": 0,
+  "listings": []
 }
